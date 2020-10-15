@@ -3,234 +3,109 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Example 1</title>
-		<link rel="stylesheet" href="css/normalize.css">
+		<title>Глава 12</title>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header class="page-header" id="page-header_id">
-			<div class="page-header-backdrop"></div>
-			<div class="container clearfix">
-				<nav class="menu" id="menu">
-					<botton class="menu-toggle" id="toggle-menu">Open/close menu</botton>
-					<div class="menu-dropdown">
-						<ul class="menu-nav">
-							<!-- <li><a href="#page-header_id">Start</a></li>
-							<li><a href="#introduction_id">About me</a></li>
-							<li><a href="#portfolio_id">Work</a></li>
-							<li><a href="#contact_id">Contact</a></li> -->
-							<li><a href="#">Start</a></li>
-							<li><a href="#">About me</a></li>
-							<li><a href="#">Work</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-				</nav><!-- /.menu -->
-				<div class="page-title">
-					<div class="page-title-main">May I introduce myself?</div>
-					<div class="page-subtitle">Frontend Design | UI/UX Design</div>
-				</div><!-- page-title -->
-				<button class="btn page-header-btn">Go ahead</button>
-			</div><!-- /.page-title -->
-		</header><!-- /.header -->
-		<main class="main">
-			<section class="introduction" id="introduction_id">
-				<div class="container">
-					<h2 class="title">RAPHAEL LECHNER</h2>
-					<p class="introduction-text">
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+		<nav class="page-nav">
+			<div class="container page-nav__inner dropdown">
+				<a class="home-link" href="#">Тандем</a>
+				<button class="dropdown__toggle">Свернуть меню</button>
+				<ul class="dropdown__drawer top-nav">
+					<li><a href="#">Возможности</a></li>
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Поддержка</a></li>
+					<li class="top-nav__featured"><a href="#">Войти</a></li>
+				</ul>
+			</div>
+		</nav><!-- /.page-nav -->
+
+		<div class="hero">
+			<div class="container hero__inner">
+				<h2>Правильный путь к работе в команде</h2>
+				<a class="button button-cta" href="#">Начало работы</a>
+			</div>
+		</div><!-- /.hero -->
+
+		<main class="container">
+			<div class="tile-grid">
+				<div class="tile">
+					<h4>Работайте совместно, даже удаленно!</h4>
+					<p>
+						Организуйте переговоры в потоки. Совместно работайте над документами в режиме реального времени. Совершайте <a href="#">видеозвонки</a>, чтобы видеть собеседника.
 					</p>
-					<div class="cards">
-						<div class="cards__item">
-							<svg 
-							 xmlns="http://www.w3.org/2000/svg"
-							 xmlns:xlink="http://www.w3.org/1999/xlink"
-							 width="64px" height="64px">
-							<path fill-rule="evenodd"  
-							 d="M63.137,10.691 L60.165,13.645 L50.258,3.800 L53.230,0.846 C54.324,-0.241 56.043,-0.296 57.069,0.723 L63.260,6.876 C64.286,7.896 64.231,9.604 63.137,10.691 ZM36.862,36.806 L26.956,26.961 L48.750,5.301 L58.657,15.147 L36.862,36.806 ZM35.483,38.178 L21.614,42.116 L25.577,28.333 L35.483,38.178 ZM12.393,8.230 C8.971,8.230 6.196,11.004 6.196,14.426 L6.196,51.606 C6.196,55.029 8.971,57.803 12.393,57.803 L49.573,57.803 C52.995,57.803 55.770,55.029 55.770,51.606 L55.770,26.820 L61.967,20.623 L61.967,53.672 C61.967,59.376 57.342,64.000 51.639,64.000 L10.327,64.000 C4.624,64.000 -0.000,59.376 -0.000,53.672 L-0.000,12.361 C-0.000,6.657 4.624,2.033 10.327,2.033 L43.376,2.033 L37.180,8.230 L12.393,8.230 Z"/>
-							</svg>
-							<h3 class="subtitle">Sketching is fun</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
-							</p>
-						</div>
-						<div class="cards__item">
-							<svg 
-							 xmlns="http://www.w3.org/2000/svg"
-							 xmlns:xlink="http://www.w3.org/1999/xlink"
-							 width="64px" height="64px">
-							<path fill-rule="evenodd"
-							 d="M58.000,36.000 L58.000,32.000 L58.000,28.000 L64.000,28.000 L64.000,36.000 L58.000,36.000 ZM32.000,58.000 C17.640,58.000 6.000,46.359 6.000,32.000 C6.000,17.641 17.640,6.000 32.000,6.000 C46.359,6.000 58.000,17.641 58.000,32.000 C58.000,46.359 46.359,58.000 32.000,58.000 ZM32.000,12.000 C20.954,12.000 12.000,20.954 12.000,32.000 C12.000,43.045 20.954,52.000 32.000,52.000 C43.045,52.000 52.000,43.045 52.000,32.000 C52.000,20.954 43.045,12.000 32.000,12.000 ZM32.000,46.000 C24.268,46.000 18.000,39.732 18.000,32.000 C18.000,24.268 24.268,18.000 32.000,18.000 C39.732,18.000 46.000,24.268 46.000,32.000 C46.000,39.732 39.732,46.000 32.000,46.000 ZM36.000,64.000 L28.000,64.000 L28.000,58.000 L32.000,58.000 L36.000,58.000 L36.000,64.000 ZM-0.000,36.000 L-0.000,28.000 L6.000,28.000 L6.000,32.000 L6.000,36.000 L-0.000,36.000 ZM28.000,-0.000 L36.000,-0.000 L36.000,6.000 L32.000,6.000 L28.000,6.000 L28.000,-0.000 Z"/>
-							</svg>
-							<h3 class="subtitle">Design afterwards</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
-							</p>
-						</div>
-						<div class="cards__item">
-							<svg 
-							 xmlns="http://www.w3.org/2000/svg"
-							 xmlns:xlink="http://www.w3.org/1999/xlink"
-							 width="51px" height="64px">
-							<path fill-rule="evenodd"
-							 d="M36.125,9.366 C22.884,2.468 11.687,11.448 8.500,17.066 C3.550,25.791 7.886,37.404 14.875,42.666 C23.375,49.066 35.443,48.355 38.460,40.161 C42.994,27.842 34.002,20.807 29.775,20.353 C22.045,19.521 19.950,23.304 18.473,27.076 C14.875,36.266 25.499,36.266 25.499,36.266 C25.499,36.266 21.250,25.600 27.754,26.921 C32.210,27.826 35.764,31.628 33.639,35.374 C30.451,40.993 24.344,45.694 18.645,40.736 C8.603,32.000 10.736,24.408 12.501,21.120 C13.830,18.645 18.806,9.107 31.909,14.870 C47.119,21.560 46.298,36.543 44.760,44.113 C36.918,53.586 23.515,56.237 12.750,49.742 C0.553,42.382 -3.626,26.083 3.416,13.336 C10.458,0.588 26.053,-3.779 38.250,3.581 C48.189,9.578 52.799,21.512 50.356,32.622 C49.162,25.695 45.767,14.389 36.125,9.366 ZM8.500,49.066 C8.500,49.066 8.751,52.311 10.625,53.333 C12.407,54.380 14.875,53.333 14.875,53.333 L10.055,61.836 C8.882,63.905 6.282,64.613 4.250,63.419 C2.217,62.225 1.521,59.579 2.694,57.511 L8.500,49.066 Z"/>
-							</svg>
-							<h3 class="subtitle">Finalize</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
-							</p>
-						</div>
-					</div><!-- /.cards -->
-				</div>
-			</section><!-- /.introduction -->
-			<section class="portfolio" id="portfolio_id">
-				<div class="container">
-					<div class="grid">
-						<div class="portfolio__item">
-							<img src="img/cards/flower_1.jpg" alt="Flower 1">
-							<div class="portfolio__item--hover">
-								<div class="portfolio__item--hover__backdrop"></div>
-								<div class="portfolio__item--hover__body">
-									<a class="btn btn--link portfolio-btn" href="#">
-										<svg 
-										 xmlns="http://www.w3.org/2000/svg"
-										 xmlns:xlink="http://www.w3.org/1999/xlink"
-										 width="16px" height="16px">
-										<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-										 d="M9.498,12.974 C7.942,12.974 6.533,12.407 5.413,11.499 C5.391,11.543 5.395,11.595 5.359,11.631 L4.283,12.704 L4.344,12.765 C4.555,12.975 4.555,13.315 4.344,13.525 L2.056,15.806 C1.846,16.016 1.504,16.016 1.293,15.806 L0.149,14.666 C-0.061,14.456 -0.061,14.115 0.149,13.905 L2.438,11.624 C2.648,11.415 2.990,11.415 3.200,11.624 L3.262,11.686 L4.338,10.614 C4.374,10.577 4.426,10.581 4.470,10.559 C3.559,9.443 2.991,8.038 2.991,6.488 C2.991,2.905 5.904,0.001 9.498,0.001 C13.092,0.001 16.005,2.905 16.005,6.488 C16.005,10.070 13.092,12.974 9.498,12.974 ZM9.498,2.499 C7.288,2.499 5.497,4.285 5.497,6.488 C5.497,8.690 7.288,10.476 9.498,10.476 C11.708,10.476 13.499,8.690 13.499,6.488 C13.499,4.285 11.708,2.499 9.498,2.499 Z"/>
-										</svg>
-									</a>
-									<div class="info-box">
-										<h3>Lorem ipsum dolor sit</h3>
-										<p>amet consetetur sadipscing elitr</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="portfolio__item">
-							<img src="img/cards/flower_2.jpg" alt="Flower 2">
-							<div class="portfolio__item--hover">
-								<div class="portfolio__item--hover__backdrop"></div>
-								<div class="portfolio__item--hover__body">
-									<a class="btn btn--link portfolio-btn" href="#">
-										<svg 
-										 xmlns="http://www.w3.org/2000/svg"
-										 xmlns:xlink="http://www.w3.org/1999/xlink"
-										 width="16px" height="16px">
-										<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-										 d="M9.498,12.974 C7.942,12.974 6.533,12.407 5.413,11.499 C5.391,11.543 5.395,11.595 5.359,11.631 L4.283,12.704 L4.344,12.765 C4.555,12.975 4.555,13.315 4.344,13.525 L2.056,15.806 C1.846,16.016 1.504,16.016 1.293,15.806 L0.149,14.666 C-0.061,14.456 -0.061,14.115 0.149,13.905 L2.438,11.624 C2.648,11.415 2.990,11.415 3.200,11.624 L3.262,11.686 L4.338,10.614 C4.374,10.577 4.426,10.581 4.470,10.559 C3.559,9.443 2.991,8.038 2.991,6.488 C2.991,2.905 5.904,0.001 9.498,0.001 C13.092,0.001 16.005,2.905 16.005,6.488 C16.005,10.070 13.092,12.974 9.498,12.974 ZM9.498,2.499 C7.288,2.499 5.497,4.285 5.497,6.488 C5.497,8.690 7.288,10.476 9.498,10.476 C11.708,10.476 13.499,8.690 13.499,6.488 C13.499,4.285 11.708,2.499 9.498,2.499 Z"/>
-										</svg>
-									</a>
-									<div class="info-box">
-										<h3>Lorem ipsum dolor sit</h3>
-										<p>amet consetetur sadipscing elitr</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="portfolio__item">
-							<img src="img/cards/flower_3.jpg" alt="Flower 3">
-							<div class="portfolio__item--hover">
-								<div class="portfolio__item--hover__backdrop"></div>
-								<div class="portfolio__item--hover__body">
-									<a class="btn btn--link portfolio-btn" href="#">
-										<svg 
-										 xmlns="http://www.w3.org/2000/svg"
-										 xmlns:xlink="http://www.w3.org/1999/xlink"
-										 width="16px" height="16px">
-										<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-										 d="M9.498,12.974 C7.942,12.974 6.533,12.407 5.413,11.499 C5.391,11.543 5.395,11.595 5.359,11.631 L4.283,12.704 L4.344,12.765 C4.555,12.975 4.555,13.315 4.344,13.525 L2.056,15.806 C1.846,16.016 1.504,16.016 1.293,15.806 L0.149,14.666 C-0.061,14.456 -0.061,14.115 0.149,13.905 L2.438,11.624 C2.648,11.415 2.990,11.415 3.200,11.624 L3.262,11.686 L4.338,10.614 C4.374,10.577 4.426,10.581 4.470,10.559 C3.559,9.443 2.991,8.038 2.991,6.488 C2.991,2.905 5.904,0.001 9.498,0.001 C13.092,0.001 16.005,2.905 16.005,6.488 C16.005,10.070 13.092,12.974 9.498,12.974 ZM9.498,2.499 C7.288,2.499 5.497,4.285 5.497,6.488 C5.497,8.690 7.288,10.476 9.498,10.476 C11.708,10.476 13.499,8.690 13.499,6.488 C13.499,4.285 11.708,2.499 9.498,2.499 Z"/>
-										</svg>
-									</a>
-									<div class="info-box">
-										<h3>Lorem ipsum dolor sit</h3>
-										<p>amet consetetur sadipscing elitr</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="portfolio__item">
-							<img src="img/cards/flower_4.jpg" alt="Flower 4">
-							<div class="portfolio__item--hover">
-								<div class="portfolio__item--hover__backdrop"></div>
-								<div class="portfolio__item--hover__body">
-									<a class="btn btn--link portfolio-btn" href="#">
-										<svg 
-										 xmlns="http://www.w3.org/2000/svg"
-										 xmlns:xlink="http://www.w3.org/1999/xlink"
-										 width="16px" height="16px">
-										<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-										 d="M9.498,12.974 C7.942,12.974 6.533,12.407 5.413,11.499 C5.391,11.543 5.395,11.595 5.359,11.631 L4.283,12.704 L4.344,12.765 C4.555,12.975 4.555,13.315 4.344,13.525 L2.056,15.806 C1.846,16.016 1.504,16.016 1.293,15.806 L0.149,14.666 C-0.061,14.456 -0.061,14.115 0.149,13.905 L2.438,11.624 C2.648,11.415 2.990,11.415 3.200,11.624 L3.262,11.686 L4.338,10.614 C4.374,10.577 4.426,10.581 4.470,10.559 C3.559,9.443 2.991,8.038 2.991,6.488 C2.991,2.905 5.904,0.001 9.498,0.001 C13.092,0.001 16.005,2.905 16.005,6.488 C16.005,10.070 13.092,12.974 9.498,12.974 ZM9.498,2.499 C7.288,2.499 5.497,4.285 5.497,6.488 C5.497,8.690 7.288,10.476 9.498,10.476 C11.708,10.476 13.499,8.690 13.499,6.488 C13.499,4.285 11.708,2.499 9.498,2.499 Z"/>
-										</svg>
-									</a>
-									<div class="info-box">
-										<h3>Lorem ipsum dolor sit</h3>
-										<p>amet consetetur sadipscing elitr</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn btn--link portfolio-view-more-btn">View more</a>
-				</div><!--  -->
-			</section><!-- /.portfolio -->
-			<section class="contact" id="contact_id">
-				<div class="container">
-					<h2 class="title">Get in touch!</h2>
-					<form action="" class="contact-form grid">
-						<input type="text" class="form-input-text" placeholder="Name">
-						<input type="text" class="form-input-text" placeholder="Email">
-						<textarea class="form-input-text" placeholder="How I can help you?"></textarea>
-					</form>
-				</div>
-			</section><!-- /.contact -->
-		</main><!-- /.main -->
+					<a href="#" class="button">Подробнее</a>
+				</div><!-- /.tile -->
+
+				<div class="tile">
+					<h4>Работайте повсюду</h4>
+					<p>
+						Тандем доступен на разных устройствах, поэтому работайте дома, в офисе и даже в дороге:
+					</p>
+					<ul class="tag-list">
+						<li>Web</li>
+						<li>IOS</li>
+						<li>Android</li>
+						<li>Whidows Phone</li>
+					</ul>
+					<a href="#" class="button">Подробнее</a>
+				</div><!-- /.tile -->
+
+
+				<div class="tile">
+					<h4>Работайте повсюду</h4>
+					<p>
+						Тандем доступен на разных устройствах, поэтому работайте дома, в офисе и даже в дороге:
+					</p>
+					<ul class="tag-list">
+						<li>Web</li>
+						<li>IOS</li>
+						<li>Android</li>
+						<li>Whidows Phone</li>
+					</ul>
+					<a href="#" class="button">Подробнее</a>
+				</div><!-- /.tile -->
+
+				<div class="tile">
+					<h4>Работайте повсюду</h4>
+					<p>
+						Тандем доступен на разных устройствах, поэтому работайте дома, в офисе и даже в дороге:
+					</p>
+					<ul class="tag-list">
+						<li>Web</li>
+						<li>IOS</li>
+						<li>Android</li>
+						<li>Whidows Phone</li>
+					</ul>
+					<a href="#" class="button">Подробнее</a>
+				</div><!-- /.tile -->
+
+				<div class="tile">
+					<h4>Гибкие цены</h4>
+					<p>
+						Неважно, три человека в вашей команде или триста, гибкий прайс-лист позволит подобрать подходящий тарифный план.
+					</p>
+					<a href="#" class="button">Подробнее</a>
+				</div><!-- /.tile -->
+			</div><!-- /.tile-grid -->
+		</main><!-- /.container -->
+
 		<footer class="page-footer">
-			<div class="container">
-				<div class="messengers">
-					<div class="messengers__item">
-						<svg 
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="48px" height="39px">
-						<path fill-rule="evenodd"
-						 d="M48.000,4.489 L43.500,8.978 C43.500,8.978 43.500,8.571 43.500,9.727 C43.500,10.547 43.367,11.331 43.176,12.092 C43.071,18.267 41.099,26.457 33.000,32.921 C17.068,45.635 -0.000,34.417 -0.000,34.417 C13.500,34.417 13.500,29.928 13.500,29.928 C10.500,29.928 4.500,23.942 4.500,23.942 C6.000,25.439 9.000,23.942 9.000,23.942 C1.500,19.453 1.500,14.964 1.500,14.964 C3.000,16.460 6.000,14.964 6.000,14.964 C-1.500,8.978 3.000,1.496 3.000,1.496 C4.500,8.978 24.000,11.971 24.000,11.971 L24.248,11.847 C24.095,11.163 24.000,9.709 24.000,8.978 C24.000,3.606 28.365,-0.000 33.750,-0.000 C36.713,-0.000 39.336,1.347 41.124,3.429 L42.000,2.993 L46.500,-0.000 L43.500,5.985 L48.000,4.489 Z"/>
-						</svg>
-					</div>
-					<div class="messengers__item">
-						<svg 
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="38px" height="38px">
-						<path fill-rule="evenodd"
-						 d="M19.000,38.000 C8.506,38.000 -0.000,29.493 -0.000,19.000 C-0.000,8.506 8.506,-0.000 19.000,-0.000 C29.493,-0.000 38.000,8.506 38.000,19.000 C38.000,29.493 29.493,38.000 19.000,38.000 ZM34.039,21.123 C32.170,20.659 28.655,20.028 24.660,20.515 C26.762,25.966 27.616,30.245 27.815,31.367 C31.129,29.000 33.446,25.340 34.039,21.123 ZM25.112,32.911 C24.349,28.732 23.037,24.747 21.521,21.133 C17.223,22.317 12.749,25.059 9.386,30.770 C12.006,32.912 15.352,34.200 19.000,34.200 C21.176,34.200 23.241,33.734 25.112,32.911 ZM3.800,19.000 C3.800,22.669 5.100,26.034 7.265,28.661 C8.941,25.881 13.002,20.539 20.338,18.476 C19.856,17.447 19.367,16.444 18.872,15.497 C11.939,18.182 6.722,18.363 3.831,18.132 C3.815,18.420 3.800,18.708 3.800,19.000 ZM4.238,15.398 C8.099,15.435 13.228,14.772 17.621,13.198 C15.597,9.613 13.677,6.836 12.521,5.265 C8.425,7.201 5.335,10.907 4.238,15.398 ZM19.000,3.800 C17.756,3.800 16.554,3.965 15.397,4.247 C17.450,6.752 19.165,9.363 20.623,11.937 C24.591,10.063 27.172,8.070 28.362,7.041 C25.780,5.017 22.535,3.800 19.000,3.800 ZM30.627,9.219 C27.505,11.334 24.572,12.970 21.857,14.226 C22.485,15.454 23.045,16.658 23.556,17.830 C26.616,17.442 30.146,17.625 34.184,18.660 C34.104,15.067 32.785,11.782 30.627,9.219 Z"/>
-						</svg>
-					</div>
-					<div class="messengers__item">
-						<svg 
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="19px" height="38px">
-						<path fill-rule="evenodd"
-						 d="M18.992,0.023 L13.196,0.023 C13.196,0.023 4.051,-0.737 4.051,8.264 C4.051,10.189 4.051,13.537 4.051,13.537 L-0.005,13.537 L0.012,19.078 L4.124,19.078 L4.214,38.009 L12.384,38.009 L12.384,19.078 L17.777,19.078 L18.928,13.537 L12.311,13.537 L12.311,9.113 C12.311,9.113 12.244,6.752 15.156,6.752 L18.936,6.752 L18.992,0.023 Z"/>
-						</svg>
-					</div>
-				</div><!-- /.messengers -->
-				<div class="footer-text">
-					<p>&copy; Raphael Lechner</p>
-					<p>Imprint</p>
-				</div>
+			<div class="container page-footer__inner">
+				Собственность &copy; 2020 Корпорация "Тандем"
 			</div>
 		</footer><!-- /.page-footer -->
+
 		<script type="text/javascript">
 			(function() {
-				var menu_toggle = document.getElementById('toggle-menu');
-				var menu = document.getElementById('menu');
-				menu_toggle.addEventListener('click', function(event) {
-					event.preventDefault();
-					menu.classList.toggle('is-open');
+				var dropdown__toggles = document.querySelectorAll('.dropdown__toggle');
+				Array.prototype.forEach.call(dropdown__toggles, function(toggle) {
+					toggle.addEventListener('click', function(event) {
+						event.preventDefault();
+						event.target.parentNode.classList.toggle('is-open');
+					});
 				});
-			})();
+			}());
 		</script>
 	</body>
 </html>
